@@ -27,6 +27,12 @@ import UIKit
 
 open class CHIPageControlJaloro: CHIBasePageControl {
 
+    open var inactiveTintColor: UIColor! {
+        didSet {
+            setNeedsLayout()
+        }
+    }
+    
     @IBInspectable open var elementWidth: CGFloat = 20 {
         didSet {
             setNeedsLayout()
@@ -78,7 +84,9 @@ open class CHIPageControlJaloro: CHIBasePageControl {
         active.frame = frame
 
         inactive.enumerated().forEach() { index, layer in
-            layer.backgroundColor = self.tintColor(position: index).withAlphaComponent(self.inactiveTransparency).cgColor
+            
+            layer.backgroundColor = self.inactiveTintColor.cgColor
+            
             if self.borderWidth > 0 {
                 layer.borderWidth = self.borderWidth
                 layer.borderColor = self.tintColor(position: index).cgColor
