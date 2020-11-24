@@ -25,7 +25,7 @@
 
 import UIKit
 
-class CHIPageControlJaloro: CHIBasePageControl {
+public class CHIPageControlJaloro: CHIBasePageControl {
 
     open var inactiveTintColor: UIColor! {
         didSet {
