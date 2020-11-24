@@ -25,7 +25,7 @@
 
 import UIKit
 
-class CHIPageControlFresno: CHIBasePageControl {
+public class CHIPageControlFresno: CHIBasePageControl {
 
     fileprivate var diameter: CGFloat {
         return radius * 2

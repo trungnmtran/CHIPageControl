@@ -25,8 +25,7 @@
 
 import UIKit
 
-
-class CHIPageControlChimayo: CHIBasePageControl {
+public class CHIPageControlChimayo: CHIBasePageControl {
 
     fileprivate var diameter: CGFloat {
         return radius * 2
