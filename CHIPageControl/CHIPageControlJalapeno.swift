@@ -25,7 +25,7 @@
 
 import UIKit
 
-open class CHIPageControlJalapeno: CHIBasePageControl {
+public class CHIPageControlJalapeno: CHIBasePageControl {
     
     internal var lastPage:Int = 0
     
@@ -33,9 +33,9 @@ open class CHIPageControlJalapeno: CHIBasePageControl {
         return radius * 2
     }
     
-    private(set) var inactive = [CHILayer]()
+    public var inactive = [CHILayer]()
     
-    private(set) var active: CHILayer = CHILayer()
+    public var active: CHILayer = CHILayer()
 
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

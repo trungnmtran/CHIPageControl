@@ -33,7 +33,7 @@ class ViewController: UIViewController {
 
         //you can display page control vertical
         self.verticalPageControl.transform = self.pageControls.last!.transform.rotated(by: .pi/2)
-        
+
         //you can activate touch through code
         self.verticalPageControl.enableTouchEvents = true
         self.verticalPageControl.delegate = self

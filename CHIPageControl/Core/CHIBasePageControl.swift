@@ -25,7 +25,7 @@
 
 import UIKit
 
-@IBDesignable open class CHIBasePageControl: UIControl, CHIPageControllable {
+@IBDesignable public class CHIBasePageControl: UIControl, CHIPageControllable {
     
     open weak var delegate: CHIBasePageControlDelegate?
 

@@ -26,7 +26,7 @@
 import UIKit
 import Darwin
 
-open class CHIPageControlPaprika: CHIBasePageControl {
+class CHIPageControlPaprika: CHIBasePageControl {
     
     fileprivate var diameter: CGFloat {
         return radius * 2
