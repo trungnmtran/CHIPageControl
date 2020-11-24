@@ -32,7 +32,7 @@ open class CHIPageControlChimayo: CHIBasePageControl {
         return radius * 2
     }
 
-    fileprivate var inactive = [CHILayer]()
+    private(set) var inactive = [CHILayer]()
 
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

@@ -33,9 +33,9 @@ open class CHIPageControlJalapeno: CHIBasePageControl {
         return radius * 2
     }
     
-    fileprivate var inactive = [CHILayer]()
+    private(set) var inactive = [CHILayer]()
     
-    fileprivate var active: CHILayer = CHILayer()
+    private(set) var active: CHILayer = CHILayer()
 
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

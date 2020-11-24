@@ -45,8 +45,8 @@ open class CHIPageControlJaloro: CHIBasePageControl {
         }
     }
 
-    fileprivate var inactive = [CHILayer]()
-    fileprivate var active = CHILayer()
+    private(set) var inactive = [CHILayer]()
+    private(set) var active = CHILayer()
 
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
